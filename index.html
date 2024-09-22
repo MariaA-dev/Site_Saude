@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde e Cuidados Pessoais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Saúde e Cuidados Pessoais</h1>
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav class="menu-expansivel">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#habitos-saudaveis">Hábitos Saudáveis</a></li>
+                <li><a href="#alimentacao">Alimentação</a></li>
+                <li><a href="#exercicios">Exercícios Físicos</a></li>
+                <li><a href="#saude-mental">Saúde Mental</a></li>
+                <li><a href="#calculadora-imc">Calculadora de IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo ao nosso site de Saúde e Cuidados Pessoais</h2>
+            <p>A saúde é o nosso bem mais precioso. Manter bons hábitos, como uma alimentação equilibrada e a prática regular de exercícios, é essencial para o bem-estar.</p>
+        </section>
+
+        <section id="habitos-saudaveis">
+            <h2>Hábitos Saudáveis</h2>
+            <p>Adotar uma rotina de cuidados pessoais pode melhorar significativamente a sua qualidade de vida.</p>
+        </section>
+
+        <section id="alimentacao">
+          <h2>Alimentação Saudável</h2>
+          <p>A alimentação equilibrada é fundamental para a saúde. Aqui estão algumas dicas:</p>
+          <ul>
+              <li>Inclua uma variedade de frutas e verduras em suas refeições.</li>
+              <li>Prefira grãos integrais em vez de refinados.</li>
+              <li>Consuma proteínas magras, como peixes e carnes brancas.</li>
+              <li>Beba bastante água durante o dia.</li>
+              <li>Evite alimentos processados e ricos em açúcar.</li>
+          </ul>
+          <p>Exemplo de refeição saudável: Salada com folhas verdes, tomate, cenoura, peito de frango grelhado e quinoa.</p>
+        </section>
+      
+        <section id="exercicios">
+          <h2>Exercícios Físicos</h2>
+          <p>Exercícios são essenciais para a saúde física e mental. Aqui estão algumas sugestões:</p>
+          <h3>Iniciantes:</h3>
+          <ul>
+              <li>Caminhada leve (30 minutos)</li>
+              <li>Yoga para iniciantes</li>
+          </ul>
+          <h3>Intermediários:</h3>
+          <ul>
+              <li>Corrida moderada (30-45 minutos)</li>
+              <li>Aulas de dança</li>
+          </ul>
+          <h3>Avançados:</h3>
+          <ul>
+              <li>Treinamento de força com pesos</li>
+              <li>Treinos intervalados de alta intensidade (HIIT)</li>
+          </ul>
+        </section>
+      
+        <section id="saude-mental">
+          <h2>Saúde Mental</h2>
+          <p>Cuidar da saúde mental é essencial para o bem-estar. Algumas estratégias incluem:</p>
+          <ul>
+              <li>Técnicas de meditação para relaxamento e foco.</li>
+              <li>Práticas de respiração para gerenciamento de estresse.</li>
+              <li>Manter um diário para expressar sentimentos e reflexões.</li>
+              <li>Reservar tempo para atividades prazerosas e autocuidado.</li>
+          </ul>
+        </section>
+      
+
+        <section id="calculadora-imc">
+          <h2>Calculadora de IMC</h2>
+          <p>Insira seu peso e altura para calcular seu IMC:</p>
+          <div class="imc-container">
+              <label for="peso">Peso (kg):</label>
+              <input type="number" id="peso" placeholder="Seu peso" required>
+              <br>
+              <label for="altura">Altura (m):</label>
+              <input type="number" id="altura" placeholder="Sua altura" step="0.01" required>
+              <br>
+              <button id="calcular-imc">Calcular IMC</button>
+              <br>
+          </div>
+          <div id="resultado-imc" class="resultado"></div>
+        </section>
+      
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Saúde e Cuidados Pessoais. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

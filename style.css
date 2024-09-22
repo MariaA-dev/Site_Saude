@@ -1,0 +1,174 @@
+/* Estilos gerais do corpo */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* Azul claro */
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #4CAF50; /* Verde */
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  text-align: center; /* Centraliza o texto */
+  margin: 0; /* Remove margens padrão */
+  padding: 20px 0; /* Adiciona espaçamento acima e abaixo */
+  font-size: 2.5em; /* Tamanho maior para o título */
+  color: white; /* Cor do texto */
+}
+
+main {
+  padding: 0 20px; /* Adiciona espaçamento lateral */
+}
+
+section {
+  margin: 20px 0; /* Espaçamento entre seções */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff; /* Branco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Botão de menu hambúrguer */
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  display: none; /* Esconde o botão em telas maiores */
+  padding: 10px;
+}
+
+/* Estilos do menu */
+.menu-expansivel {
+  display: none; /* Esconde o menu por padrão */
+}
+
+.menu-expansivel ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-expansivel li {
+  margin: 0 15px;
+}
+
+.menu-expansivel a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.menu-expansivel a:hover {
+  color: #ffeb3b; /* Amarelo */
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block; /* Exibe o botão de menu em telas pequenas */
+  }
+
+  /* Estilos do menu */
+  .menu-expansivel {
+      display: none; /* Esconde o menu por padrão */
+      position: absolute; /* Coloca o menu em posição absoluta */
+      background-color: #4CAF50; /* Cor de fundo do menu */
+      width: 100%; /* O menu ocupa toda a largura */
+      top: 60px; /* Ajuste conforme a altura do cabeçalho */
+      left: 0;
+      text-align: left; /* Alinhamento do texto à esquerda */
+  }
+
+  .menu-expansivel ul {
+      flex-direction: column; /* Exibe os itens em coluna */
+  }
+
+  .menu-expansivel li {
+      margin: 0; /* Remove margens dos itens */
+      padding: 10px; /* Adiciona padding para os itens */
+  }
+
+  .menu-expansivel a {
+      display: block; /* Faz com que o link ocupe toda a área do item */
+  }
+
+  .menu-expansivel.active {
+      display: flex; /* Exibe o menu quando ativo */
+  }
+}
+
+/* Estilo do botão de calcular IMC */
+#calcular-imc {
+  background-color: #4CAF50; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove bordas */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor em forma de ponteiro */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Animação para mudança de cor */
+}
+
+/* Efeito de hover */
+#calcular-imc:hover {
+  background-color: #45a049; /* Cor de fundo quando o mouse passa por cima */
+}
+
+/* Posicionamento do botão */
+.imc-container {
+  display: flex;
+  flex-direction: column; /* Organiza os elementos em coluna */
+  align-items: center; /* Centraliza os itens */
+  margin-top: 20px; /* Espaçamento acima do container */
+}
+
+/* Estilo para o resultado do IMC */
+#resultado-imc {
+  margin-top: 20px; /* Espaçamento acima */
+  padding: 15px; /* Espaçamento interno */
+  background-color: #e7f3fe; /* Cor de fundo suave */
+  color: #31708f; /* Cor do texto */
+  border: 1px solid #bce8f1; /* Borda leve */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-align: center; /* Centraliza o texto */
+  font-size: 18px; /* Tamanho da fonte */
+  font-weight: bold; /* Destaca o texto */
+}
+
+/* Adiciona uma animação de destaque */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#resultado-imc {
+  animation: fadeIn 0.5s ease-in; /* Animação ao aparecer */
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
